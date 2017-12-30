@@ -1,10 +1,10 @@
 {
-  "name": "react-protected-route",
+  "name": "@massiveco/protected-route",
   "version": "1.0.0",
   "description": "Protected routes in react-router",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "prepublish": "babel -o index.js src/index.js"
   },
   "repository": {
     "type": "git",
@@ -17,6 +17,12 @@
   },
   "homepage": "https://github.com/massiveco/react-protected-route#readme",
   "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-react": "^6.24.1"
+  },
+  "peerDependencies": {
     "react": "^16.2.0",
     "react-redux": "^5.0.6",
     "react-router-dom": "^4.2.2"
